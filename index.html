@@ -39,26 +39,12 @@
         Seu navegador não suporta o elemento de áudio.
     </audio>
     <br>
-    <label for="languageSelect">Idiom:</label>
-    <select id="languageSelect" onchange="changeAudio()">
-        <option value="audiodinamica_ptbr.mp3">🇧🇷 Português</option>
-        <option value="audiodinamica_eng.mp3">🇺🇸 Inglês</option>
-        <option value="audiodinamica_esp.mp3">🇪🇸 Espanhol</option>
-    </select>
-    <p>12/03/2025 07:15 - <a href="Mansao_Manual_A4.pdf" target="_blank">📖 Baixar Manual PDF</a></p>
+    <label for="languageSelect"><a href="index.html"><img src="flag_br.png" alt="Português" width="45" height="34"></a> | <a href="index_eng.html"><img src="flag_eng.png" alt="English" width="45" height="34"></a> | <a href="index_esp.html"><img src="flag_esp.png" alt="Español" width="45" height="34"></a> </label>
+    <p>12/03/2025 07:20 - <a href="Mansao_Manual_A4.pdf" target="_blank">📖 Baixar Manual PDF</a></p>
     <p><a href="https://youtu.be/2SZcjx7Ng1Q" target="_blank">🎞 Vídeo sobre o Jogo</a></p><br>
     <a class="share-link" href="https://api.whatsapp.com/send?text=Confira%20o%20site%20oficial%20do%20jogo%20A%20Mans%C3%A3o%20da%20Disc%C3%B3rdia:%20https://cachorrocansado.github.io/mansao/" target="_blank">✆ Compartilhar no WhatsApp</a>
     <br>
     <img src="qrcode_mansao.jpg" alt="Mansão" width="100" height="100">
 
-    <script>
-        function changeAudio() {
-            var audioPlayer = document.getElementById('audioPlayer');
-            var audioSource = document.getElementById('audioSource');
-            var languageSelect = document.getElementById('languageSelect');
-            audioSource.src = languageSelect.value;
-            audioPlayer.load();
-        }
-    </script>
 </body>
 </html>
