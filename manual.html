@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Mansão da Discórdia</title>
+    <script>
+        function mostrarAlerta() {
+            alert("");
+        }
+       
+        function changeAudio(radioButton) {
+        // Obtém o elemento de áudio e a fonte
+        var audioPlayer = document.getElementById('audioPlayer');
+        var audioSource = document.getElementById('audioSource');
+
+        // Altera o arquivo de áudio com base na opção selecionada
+        audioSource.src = radioButton.value;
+        
+        // Atualiza o player para carregar o novo arquivo
+        audioPlayer.load();
+
+        // Mostra qual opção está selecionada no console (para fins de monitoramento)
+        console.log('Opção selecionada:', radioButton.value);
+    }
+
+
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            margin: 0;
+            background-attachment: fixed; /* Fixa a imagem de fundo */
+            background: url('fundo.jpg') no-repeat center center fixed;
+            background-size: cover;           
+            color: white; /* Altera a cor do texto para branco*/
+        }
+        img {
+            object-fit: cover;
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+
+        a {
+         color: yellow; /* Altera a cor dos links para branco */   
+        }
+
+        a2 {
+         color: LightBlue; /* Altera a cor dos links para branco */   
+        }
+    </style>
+</head>
+<body>
+    <img src="mansao.png" alt="Mansão" width="300" height="150">
+    <p>
+
+    <a href="comprar_ptbr.html"><img src="button_comprar.png" width="200" height="45"></a>
+    <br>
+    <a href="comprar_ptbr.html"><img src="button_comprar.png" width="200" height="45"></a>
+    <br>
+    <a href="comprar_ptbr.html"><img src="button_comprar.png" width="200" height="45"></a><br>
+
+</body>
+</html>
